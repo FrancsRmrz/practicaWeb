@@ -76,8 +76,9 @@
                                 </td>";
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['descripcion'] . "</td>";
-                            echo "<td>" . $row['address'] . "</td>";
-                            echo "<td>" . $row['phone'] . "</td>";
+                            echo "<td>" . $row['minimo'] . "</td>";
+                            echo "<td>" . $row['maximo'] . "</td>";
+                            echo "<td>" . $row['stock'] . "</td>";
                             echo "<td>
                                     <a href='#editEmployeeModal' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Edit'>&#xE254;</i></a>
                                     <a href='#deleteEmployeeModal' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a>
