@@ -1,0 +1,198 @@
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif");
+
+* {
+    font-family: "PT Serif", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+
+
+.btn-flotante {
+font-size: 1.2rem; /* Cambiar el tamaño de la tipografia */
+font-weight: bold; /* Fuente en negrita o bold */
+color: #ffffff; /* Color del texto */
+border-radius: 25%; /* Borde del boton */
+letter-spacing: 2px; /* Espacio entre letras */
+background-color: #000000; /* Color de fondo */
+padding: 0px 10px 10px 10px; /* Relleno del boton */
+position: fixed;
+top: 65px;
+right: 40px;
+transition: all 300ms ease 0ms;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+z-index: 99;
+text-decoration: none;
+}
+.btn-flotante:hover {
+background-color: rgb(53, 53, 53);
+color: #000000;
+transform: translateY(-3px);
+}
+
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange;
+}
+
+.btn-mata {
+    background-color: #FD8910;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+
+#total_pagar {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Cambiar el color del texto a blanco */
+#ftco-navbar .navbar-nav .nav-link {
+    color: #ffffff !important; /* !important asegura que esta regla tenga prioridad */
+}
+
+/* Cambiar el color del enlace resaltado a naranja */
+#ftco-navbar .navbar-nav .nav-link.active,
+#ftco-navbar .navbar-nav .nav-link:hover {
+    color: #ffA500 !important; /* Cambia #ffA500 por el código de color naranja deseado */
+}
+
+
+#btnCarrito {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#btnCarrito:hover {
+    background-color: #17a2b8; /* Cambia este color según tu preferencia */
+}
+
+#carrito {
+    color: orangered;
+    margin-right: 5px;
+}
+
+/* Estilos para el footer */
+.ftco-footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.ftco-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ftco-footer a:hover {
+    color: #FD8910;
+}
+
+.ftco-footer p {
+    color: rgba(255,255,255,.5);
+}
+
+.ftco-footer-social a {
+    color: #fff;
+    margin-right: 10px; /* Añadir espacio entre iconos de redes sociales */
+}
+
+.ftco-footer-social a:hover {
+    color: #FD8910;
+}
+
+/* Estilos para el segundo contenedor */
+.bg-dark {
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Estilos para el texto de copyright */
+.ftco-footer p.mb-0 {
+    color: rgba(255,255,255,.5);
+}
+
+/* Alineación y espacio para mayor elegancia */
+.ftco-footer h2.logo {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.btn-flotante {
+font-size: 14px;
+padding: 12px 20px;
+bottom: 20px;
+right: 20px;
+}
+}
+

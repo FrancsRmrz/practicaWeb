@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif");
+
+* {
+    font-family: "PT Serif", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+
+body {
+    font-family: "PT Serif", sans-serif;
+    background-color: #343a40 !important;
+}
+
+.navbar {
+    background-color: #343a40 !important; /* Negro */
+    border-bottom: 10px solid #FD8910; /* Línea de color naranja */
+}
+
+/* Estilos para el botón de búsqueda (opcional) */
+.navbar-search .btn-primary {
+    background-color: #FD8910; /* Color naranja (#e74a3b) */
+    border-color: #FD8910; /* Color del borde igual al fondo */
+}
+
+/* Estilos para el ícono de usuario (opcional) */
+.navbar .img-profile {
+    border: 2px solid #FD8910; /* Borde de color naranja (#e74a3b) */
+}
+
+.bg-admin {
+    background-color: #343a40; 
+}
+
+.sidebar-brand img {
+    width: 60px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* La altura se ajustará automáticamente para mantener las proporciones */
+}
+
+.btn-mata {
+    background-color: #FD8910;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para el encabezado */
+h1 {
+    color: #343a40;
+}
+
+/* Estilo para la tabla */
+.table {
+    background-color: #ffffff;
+}
+
+/* Estilo para la cabecera de la tabla */
+.table thead th {
+    background-color: #0000;
+    color: #ffffff;
+}
+
+/* Estilo para las celdas de la tabla */
+.table tbody td {
+    background-color: #ffffff;
+}
+
+/* Estilo para el botón de Nuevo */
+#abrirProducto {
+    background-color: #FD8910;
+    color: #ffffff;
+}
+
+.table {
+    background-color: #333; /* Cambia el fondo de la tabla a un tono oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.table th, .table td {
+    border-color: #555; /* Cambia el color de borde a un tono más claro */
+    color: black; /* Cambia el color del texto de la tabla a negro */
+}
+
+.table thead th {
+    background-color: #0000 !important; /* Cambia el fondo del encabezado a un tono más oscuro */
+}
+
+.table-responsive {
+    border: 1px solid #555; /* Añade un borde a la tabla responsive */
+    padding: 10px; /* Añade espacio interno a la tabla responsive */
+    border-radius: 8px; /* Añade bordes redondeados */
+    overflow: auto; /* Permite desplazamiento horizontal en dispositivos pequeños */
+}
+
+.eliminar button {
+    background-color: #FD8910; /* Cambia el color del botón "Eliminar" a rojo */
+    color: white; /* Cambia el color del texto a blanco */
+}
