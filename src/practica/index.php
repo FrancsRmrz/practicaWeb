@@ -30,7 +30,7 @@
                 </div>
             </div>
             <table class="table table-striped table-hover">
-                <thead>
+            <thead>
                     <tr>
                         <th>
                             <span class="custom-checkbox">
@@ -38,10 +38,32 @@
                                 <label for="selectAll"></label>
                             </span>
                         </th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Phone</th>
+                        <?php
+                        // Replace the database connection details with your own
+                        $servername = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "practica";
+
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+
+                        // Fetch column names from the database table
+                        $tableName = "almacen"; // Change this to your table name
+                        $result = $conn->query("SHOW COLUMNS FROM $tableName");
+
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<th>" . ucfirst($row['Field']) . "</th>";
+                            }
+                        }
+                        $conn->close();
+                        ?>
                         <th>Actions</th>
                     </tr>
                 </thead>
