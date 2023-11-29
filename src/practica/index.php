@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -19,7 +20,7 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>Manage <b>Employees</b></h2>
+                        <h2>Mi <b>Almacen</b></h2>
                     </div>
                     <div class="col-sm-6">
                         <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
@@ -199,7 +200,11 @@
 
                 // Fetch record data
                 $tableName = "almacen"; // Change this to your table name
-                $result = $conn->query("SELECT * FROM $tableName WHERE id = $recordId");
+                $stmt = $conn->prepare("SELECT * FROM $tableName WHERE id = ?");
+                $stmt->bind_param("i", $recordId); // "i" indica que el valor es un entero
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
 
                 if ($result->num_rows > 0) {
                     $row = $result->fetch_assoc();
